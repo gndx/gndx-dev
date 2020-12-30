@@ -1,0 +1,8 @@
+{{ $action := .action }}
+<a class="{{ if eq $action.style "button" }}button{{ end }}{{ if eq $action.style "icon" }} button-icon{{ end }}" href="{{ $action.url | relURL }}" {{ if $action.new_window }}target="_blank" rel="noopener"{{ end }}>
+  {{ if and (eq $action.style "icon") $action.icon_class }}
+  <span class="icon fab {{ $action.icon_class }}" aria-hidden="true"></span><span class="screen-reader-text">{{ $action.label }}</span>
+  {{ else }}
+  {{ $action.label }}
+  {{ end }}
+</a>

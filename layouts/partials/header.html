@@ -1,0 +1,37 @@
+<header id="masthead" class="site-header outer">
+  <div class="inner">
+    <div class="site-header-inside">
+      <div class="site-branding">
+        {{ if .Site.Params.header.logo_img }}
+        <p class="site-logo">
+          <a href="{{ "/" | relURL }}"><img src="{{ $.Site.Params.header.logo_img | relURL }}" alt="{{ $.Site.Params.header.title }}" /></a>
+        </p>
+        {{ else }}
+        <p class="site-title">
+          <a href='{{ "/" | relURL }}'>
+          <img src="https://s3.amazonaws.com/gndx.dev/gndx.png" alt="Oscar Barajas Tavares" />
+          </a>
+        </p>
+        {{ end }}
+      </div><!-- .site-branding -->
+      {{ if .Site.Params.header.has_nav }}
+      <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+      <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+        <div class="site-nav-inside">
+          <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span></button>
+          <ul class="menu">
+            {{ range $action := $.Site.Params.header.nav_links }}
+              {{ $pageUrl := trim $.URL "/" }}
+              {{ $actionUrl := trim $action.url "/" }}
+              <li class="menu-item{{ if eq $pageUrl $actionUrl }} current-menu-item{{ end }}{{ if ne $action.style "link" }} menu-button{{ end }}">
+                {{ $include_dict := dict "action" $action }}
+                {{ partial "action_link.html" $include_dict }}
+              </li>
+            {{ end }}
+          </ul><!-- .menu -->
+        </div><!-- .site-nav-inside -->
+      </nav><!-- .site-navigation -->
+      {{ end }}
+    </div><!-- .site-header-inside -->
+  </div><!-- .inner -->
+</header><!-- .site-header -->

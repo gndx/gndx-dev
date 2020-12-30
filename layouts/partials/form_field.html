@@ -1,0 +1,41 @@
+{{ $field := .field }}
+{{ if eq $field.input_type "checkbox" }}
+<div class="form-group form-checkbox">
+  <input type="checkbox" id="{{ $field.name }}" name="{{ $field.name }}"{{ if $field.is_required }} required{{ end }}>
+  {{ if $field.label }}
+  <label for="{{ $field.name }}">{{ $field.label }}</label>
+  {{ end }}
+</div>
+{{ else if eq $field.input_type "select" }}
+<div class="form-group">
+  {{ if $field.label }}
+  <label for="{{ $field.name }}">{{ $field.label }}</label>
+  {{ end }}
+  <div class="form-select-wrap">
+    <select id="{{ $field.name }}" name="{{ $field.name }}"{{ if $field.is_required }} required{{ end }}>
+      {{ if $field.default_value }}
+      <option value="">{{ $field.default_value }}</option>
+      {{ end }}
+      {{ range $option := $field.options }}
+      <option value="{{ $option }}">{{ $option }}</option>
+      {{ end }}
+    </select>
+  </div>
+</div>
+{{ else if eq $field.input_type "textarea" }}
+<div class="form-group">
+  {{ if $field.label }}
+  <label for="{{ $field.name }}">{{ $field.label }}</label>
+  {{ end }}
+  <textarea name="{{ $field.name }}" id="{{ $field.name }}" rows="5"{{ if $field.default_value }} placeholder="{{ $field.default_value }}"{{ end }}{{ if $field.is_required }} required{{ end }}></textarea>
+  <span class="animate-border" aria-hidden="true"></span>
+</div>
+{{ else }}
+<div class="form-group">
+  {{ if $field.label }}
+  <label for="{{ $field.name }}">{{ $field.label }}</label>
+  {{ end }}
+  <input type="{{ $field.input_type }}" name="{{ $field.name }}" id="{{ $field.name }}"{{ if $field.default_value }} placeholder="{{ $field.default_value }}"{{ end }}{{ if $field.is_required }} required{{ end }} />
+  <span class="animate-border" aria-hidden="true"></span>
+</div>
+{{ end }}

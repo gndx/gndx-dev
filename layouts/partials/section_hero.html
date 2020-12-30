@@ -1,0 +1,21 @@
+{{ $section := .section }}
+<section id="{{ $section.section_id }}" class="block block-hero outer">
+  <div class="inner">
+    {{ if $section.title }}
+    <div class="block-header inner-sm">
+      <h1 class="block-title">{{ $section.title }}</h1>
+    </div>
+    {{ end }}
+    {{ if $section.content }}
+    <div class="block-content inner-sm">
+      {{ partial "markdownify-block" $section.content }}
+    </div>
+    {{ end }}
+    {{ if $section.actions }}
+    <div class="block-buttons inner-sm">
+      {{ $include_dict := dict "actions" $section.actions }}
+      {{ partial "cta_buttons.html" $include_dict }}
+    </div>
+    {{ end }}
+  </div><!-- .inner -->
+</section><!-- .block -->

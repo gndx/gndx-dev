@@ -1,0 +1,51 @@
+{{ $section := .section }}
+<section id="{{ $section.section_id }}" class="block block-posts outer">
+  <div class="inner">
+    {{ if or $section.title $section.subtitle }}
+    <div class="block-header inner-sm">
+      {{ if $section.title }}
+      <h2 class="block-title line-top">{{ $section.title }}</h2>
+      {{ end }}
+      {{ if $section.subtitle }}
+      <p class="block-subtitle">{{ $section.subtitle | safeHTML }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+    <div class="block-content">
+      <div class="post-feed grid{{ if eq $section.col_number "two" }} grid-col-2{{ end }}{{ if eq $section.col_number "three" }} grid-col-3{{ end }}">
+        {{ $display_posts := ((.Site.GetPage "section" "/blog").Pages).ByDate.Reverse }}
+        {{ $recent_posts := $display_posts | first $section.posts_number }}
+        {{ range $post := $recent_posts }}
+        <article class="post grid-item">
+          <div class="post-inside">
+            {{ if $post.Params.thumb_image }}
+            <a class="post-thumbnail" href="{{ $post.URL }}">
+              <img src="{{ $post.Params.thumb_image | relURL }}" alt="{{ $post.Params.title }}" />
+            </a>
+            {{ end }}
+            <header class="post-header">
+              <h3 class="post-title"><a href="{{ $post.URL }}" rel="bookmark">{{ $post.Params.title }}</a>
+              </h3>
+              <div class="post-meta">
+                <time class="published"
+                  datetime="{{ $post.Date | dateFormat "2006-01-02 15:04" }}">{{ $post.Date | dateFormat "January 02, 2006" }}</time>
+              </div>
+            </header>
+            {{ if $post.Params.excerpt }}
+            <p class="post-content">
+              {{ $post.Params.excerpt }}
+            </p>
+            {{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+    {{ if $section.actions }}
+    <div class="block-buttons inner-sm">
+      {{ $include_dict := dict "actions" $section.actions }}
+      {{ partial "cta_buttons.html" $include_dict }}
+    </div>
+    {{ end }}
+  </div><!-- .inner -->
+</section><!-- .block -->

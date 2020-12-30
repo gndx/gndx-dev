@@ -1,0 +1,43 @@
+{{ define "content" }}
+
+<div class="inner outer">
+
+  <header class="page-header inner-sm">
+    <h1 class="page-title line-top">{{ .Params.title }}</h1>
+    {{ if .Params.subtitle }}
+    <p class="page-subtitle">{{ $.Params.subtitle }}</p>
+    {{ end }}
+  </header><!--.page-header -->
+
+  <div class="portfolio-feed layout-{{ .Params.layout_style }}">
+    {{ $display_projects := ((.Site.GetPage "section" "/portfolio").Pages).ByDate.Reverse }}
+    {{ range $post := $display_projects }}
+    <article class="project">
+      <a href="{{ $post.URL }}" class="project-link">
+        {{ if $post.Params.thumb_image }}
+        <div class="project-thumbnail">
+          <img src="{{ $post.Params.thumb_image | relURL }}" alt="{{ $post.Params.title }}" />
+        </div>
+        {{ end }}
+        <header class="project-header">
+          <h2 class="project-title">{{ $post.Params.title }}</h2>
+        </header>
+      </a>
+    </article><!-- .project -->
+    {{ end }}
+  </div><!-- .portfolio-feed -->
+
+  <!-- Pagination TBD -->
+  <!--
+  <nav class="pagination inner-sm">
+    <div class="nav-links">
+      <a class="newer-posts button" href="#"><span class="icon-angle-left" aria-hidden="true"></span><span class="screen-reader-text">Prev</span></a>
+      <span class="page-number">Showing page X of Y</span>
+      <a class="older-posts button" href="#"><span class="screen-reader-text">Next</span><span class="icon-angle-right" aria-hidden="true"></span></a>
+    </div>
+  </nav>
+  -->
+
+</div><!-- .inner -->
+
+{{ end }}

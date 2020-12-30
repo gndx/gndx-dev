@@ -1,0 +1,47 @@
+{{ $section := .section }}
+<section id="{{ $section.section_id }}" class="block-portfolio block outer">
+  <div class="inner">
+    {{ if or $section.title $section.subtitle }}
+    <div class="block-header inner-sm">
+      {{ if $section.title }}
+      <h2 class="block-title line-top">{{ $section.title }}</h2>
+      {{ end }}
+      {{ if $section.subtitle }}
+      <p class="block-subtitle">{{ $section.subtitle | safeHTML }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+    <div class="block-content">
+      <div class="portfolio-feed layout-{{ $section.layout_style }}">
+        {{ $display_projects := ((.Site.GetPage "section" "/portfolio").Pages).ByDate.Reverse }}
+        {{ $recent_projects := $display_projects | first $section.projects_number }}
+        {{ $post_len := len $recent_projects }}
+        {{ range $post_idx, $post := $recent_projects }}
+        <article class="project">
+          {{ if and (and (eq $post_idx (sub $post_len 1)) $section.view_all_label) $section.view_all_url }}
+          <a href="{{ $section.view_all_url | relURL }}" class="project-link view-all-link">
+            {{ if $post.Params.thumb_image }}
+            <div class="project-thumbnail">
+              <img src="{{ $post.Params.thumb_image | relURL }}" alt="{{ $post.Params.title }}" />
+            </div>
+            {{ end }}
+            <span class="view-all-button">{{ $section.view_all_label }}</span>
+          </a>
+          {{ else }}
+          <a href="{{ $post.URL }}" class="project-link">
+            {{ if $post.Params.thumb_image }}
+            <div class="project-thumbnail">
+              <img src="{{ $post.Params.thumb_image | relURL }}" alt="{{ $post.Params.title }}" />
+            </div>
+            {{ end }}
+            <header class="project-header">
+              <h3 class="project-title">{{ $post.Params.title }}</h3>
+            </header>
+          </a>
+          {{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </div><!-- .inner -->
+</section><!-- .block -->

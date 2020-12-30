@@ -1,0 +1,23 @@
+<footer id="colophon" class="site-footer outer">
+  <div class="inner">
+    <div class="site-footer-inside">
+      <div class="site-info">
+        {{ if .Site.Params.footer.content }}
+        <span class="copyright">{{ $.Site.Params.footer.content | safeHTML }}</span>
+        {{ end }}
+        {{ range $action := .Site.Params.footer.links }}
+          {{ $include_dict := dict "action" $action }}
+          {{ partial "action_link.html" $include_dict }}
+        {{ end }}
+      </div><!-- .site-info -->
+      {{ if .Site.Params.footer.has_social }}
+      <div class="social-links">
+        {{ range $action := $.Site.Params.footer.social_links }}
+          {{ $include_dict := dict "action" $action }}
+          {{ partial "action_link.html" $include_dict }}
+        {{ end }}
+      </div><!-- .social-links -->
+      {{ end }}
+    </div><!-- .site-footer-inside -->
+  </div><!-- .inner -->
+</footer><!-- .site-footer -->

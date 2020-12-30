@@ -1,0 +1,53 @@
+title: Oscar Barajas Tavares
+baseURL: /
+params:
+  description: Frontend & Foundation Layer at Platzi
+  color_scheme: dark
+  accent_color: pink
+  header:
+    title: GNDX
+    has_nav: true
+    nav_links:
+      - label: Home
+        url: /
+        style: link
+      - label: Blog
+        url: /blog/
+        style: link
+      - label: Acerca
+        url: /about/
+        style: link
+      - label: Contacto
+        url: /contact/
+        style: link
+  footer:
+    content: >-
+      &copy; Todos los izquierdos reservados - Oscar Barajas Tavares [gndx] © 2021.
+    has_social: true
+    social_links:
+      - label: Twitter
+        url: 'https://twitter.com/gndx'
+        style: icon
+        icon_class: fa-twitter
+        new_window: true
+      - label: Instagram
+        url: 'https://www.instagram.com/gndx'
+        style: icon
+        icon_class: fa-instagram
+        new_window: true
+      - label: GitHub
+        url: 'https://github.com/gndx/'
+        style: icon
+        icon_class: fa-github
+        new_window: true
+      - label: YouTube
+        url: 'https://youtube.com/c/oscarbarajas'
+        style: icon
+        icon_class: fa-youtube
+        new_window: true
+taxonomies:
+  stub: stub
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm

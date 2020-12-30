@@ -1,0 +1,34 @@
+{{ $section := .section }}
+<section id="{{ $section.section_id }}" class="block block-testimonials outer">
+  <div class="inner">
+    {{ if or $section.title $section.subtitle }}
+    <div class="block-header inner-sm">
+      {{ if $section.title }}
+      <h2 class="block-title line-top">{{ $section.title }}</h2>
+      {{ end }}
+      {{ if $section.subtitle }}
+      <p class="block-subtitle">{{ $section.subtitle | safeHTML }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ if $section.testimonials }}
+    <div class="block-content">
+      <div class="grid{{ if eq $section.col_number "two" }} grid-col-2{{ end }}{{ if eq $section.col_number "three" }} grid-col-3{{ end }}">
+        {{ range $testimonial := $section.testimonials }}
+        <div class="grid-item">
+          <blockquote class="testimonial">
+            <p class="testimonial-content">{{ $testimonial.content | safeHTML }}</p>
+            <footer class="testimonial-footer">
+              {{ if $testimonial.avatar }}
+              <img class="testimonial-avatar" src="{{ $testimonial.avatar | relURL }}" alt="Author avatar">
+              {{ end }}
+              <cite class="testimonial-author">{{ $testimonial.author }}</cite>
+            </footer>
+          </blockquote>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div><!-- .inner -->
+</section><!-- .block -->

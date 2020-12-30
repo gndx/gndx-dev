@@ -1,0 +1,52 @@
+{{ define "content" }}
+
+<div class="inner outer">
+
+  <header class="page-header inner-sm{{ if .Params.hide_title }} screen-reader-text{{ end }}">
+    <h1 class="page-title line-top">{{ .Params.title }}</h1>
+    {{ if .Params.subtitle }}
+    <div class="page-subtitle">
+      {{ $.Params.subtitle | safeHTML }}
+    </div>
+    {{ end }}
+  </header><!-- .page-header -->
+
+  <div class="post-feed grid{{ if eq .Params.col_number "two" }} grid-col-2{{ end }}{{ if eq .Params.col_number "three" }} grid-col-3{{ end }}">
+    {{ $display_posts := ((.Site.GetPage "section" "/blog").Pages).ByDate.Reverse }}
+    {{ range $post := $display_posts }}
+    <article class="post grid-item">
+      <div class="post-inside">
+        {{ if $post.Params.thumb_image }}
+        <a class="post-thumbnail" href="{{ $post.URL }}">
+          <img src="{{ $post.Params.thumb_image | relURL }}" alt="{{ $post.Params.title }}" />
+        </a>
+        {{ end }}
+        <header class="post-header">
+          <h2 class="post-title"><a href="{{ $post.URL }}" rel="bookmark">{{ $post.Params.title }}</a></h2>
+          <div class="post-meta">
+            <time class="published"
+              datetime="{{ $post.Date | dateFormat "2006-01-02 15:04" }}">{{ $post.Date | dateFormat "January 02, 2006" }}</time>
+          </div>
+        </header>
+        {{ if $post.Params.excerpt }}
+        <p class="post-content">
+          {{ $post.Params.excerpt }}
+        </p>
+        {{ end }}
+      </div>
+    </article><!-- .post -->
+    {{ end }}
+  </div><!-- .post-feed -->
+
+  <!-- Pagination TBD -->
+  <!--
+  <nav class="pagination inner-sm">
+    <a class="newer-posts button" href="#"><span class="icon-angle-left" aria-hidden="true"></span><span class="screen-reader-text">Prev</span></a>
+    <span class="page-number">Showing page X of Y</span>
+    <a class="older-posts button" href="#"><span class="screen-reader-text">Next</span><span class="icon-angle-right" aria-hidden="true"></span></a>
+  </nav>
+  -->
+
+</div><!-- .inner-->
+
+{{ end }}
