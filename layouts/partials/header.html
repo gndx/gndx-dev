@@ -7,11 +7,12 @@
           <a href="{{ "/" | relURL }}"><img src="{{ $.Site.Params.header.logo_img | relURL }}" alt="{{ $.Site.Params.header.title }}" /></a>
         </p>
         {{ else }}
-        <p class="site-title">
+        <h1 class="site-title">
           <a href='{{ "/" | relURL }}'>
-          <img src="https://s3.amazonaws.com/gndx.dev/gndx.png" alt="Oscar Barajas Tavares" />
+            <img src="https://s3.amazonaws.com/gndx.dev/gndx.png" alt="Oscar Barajas Tavares" />
+            <span class="site-name">Oscar Barajas Tavares <span>Frontend Developer</span></span>
           </a>
-        </p>
+        </h1>
         {{ end }}
       </div><!-- .site-branding -->
       {{ if .Site.Params.header.has_nav }}
