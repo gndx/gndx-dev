@@ -22,7 +22,7 @@ params:
         style: link
   footer:
     content: >-
-      &copy; Todos los izquierdos reservados - Oscar Barajas Tavares [gndx] © 2021.
+      Oscar Barajas Tavares @gndx | Todos los izquierdos reservados © 2021.
     has_social: true
     social_links:
       - label: Twitter
