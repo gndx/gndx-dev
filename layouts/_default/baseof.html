@@ -7,9 +7,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="google" content="notranslate" />
         <meta name="description" content="{{ .Params.excerpt | default .Site.Params.description }}"/>
-        <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ (resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.css" . | resources.ToCSS (dict "indentWidth" 4 "outputStyle" "nested" "precision" 10)).Permalink }}">
-        
+        <meta
+        name="description"
+        content="Frontend Developer & Foundation Layer at @platzi - Lead at
+        Developer Circles from Facebook, ReactJS, Speaker & Blogger. I teach ReactJS
+        in @platzi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@gndx" />
+        <meta name="twitter:creator" content="@gndx" />
+        <meta name="twitter:title" content="Oscar Barajas Tavares" />
+        <meta
+          name="twitter:description"
+          content="Frontend Developer & Foundation Layer at @platzi - Lead at
+          Developer Circles from Facebook, ReactJS, Speaker & Blogger. I teach ReactJS
+          in @platzi" />
+        <meta
+          name="twitter:image"
+          content="https://s3.amazonaws.com/gndx.dev/gndxdev.png" />
+        <meta property="og:title" content="Oscar Barajas Tavares" />
+        <meta
+          property="og:description"
+          content="Frontend Developer & Foundation Layer at @platzi - Lead at
+          Developer Circles from Facebook, ReactJS, Speaker & Blogger. I teach ReactJS
+          in @platzi" />
+        <meta
+          property="og:image"
+          content="https://s3.amazonaws.com/gndx.dev/gndxdev.png" />
+        <meta property="og:url" content="https://gndx.dev/" />
+        <meta property="og:site_name" content="Oscar Barajas Tavares" />
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:type" content="article" />
+        <meta property="fb:app_id" content="285513459106600" />
     </head>
     <body>
         
