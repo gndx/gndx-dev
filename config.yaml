@@ -8,10 +8,10 @@ params:
     title: GNDX
     has_nav: true
     nav_links:
-      - label: Home
+      - label: Inicio
         url: /
         style: link
-      - label: Blog
+      - label: Artículos
         url: /blog/
         style: link
       - label: Acerca
@@ -31,7 +31,7 @@ params:
         icon_class: fa-twitter
         new_window: true
       - label: Instagram
-        url: 'https://www.instagram.com/gndx'
+        url: 'https://instagram.com/gndx'
         style: icon
         icon_class: fa-instagram
         new_window: true
@@ -41,9 +41,14 @@ params:
         icon_class: fa-github
         new_window: true
       - label: YouTube
-        url: 'https://youtube.com/c/oscarbarajas'
+        url: 'https://www.youtube.com/channel/UCw05fUBPwmpu-ehXFMqfdMw?sub_confirmation=1'
         style: icon
         icon_class: fa-youtube
+        new_window: true
+      - label: Twitch
+        url: 'https://twitch.tv/gndxdev'
+        style: icon
+        icon_class: fa-twitch
         new_window: true
 taxonomies:
   stub: stub

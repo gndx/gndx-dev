@@ -18,13 +18,9 @@
         {{ range $post := $recent_posts }}
         <article class="post grid-item">
           <div class="post-inside">
-            {{ if $post.Params.thumb_image }}
-            <a class="post-thumbnail" href="{{ $post.URL }}">
-              <img src="{{ $post.Params.thumb_image | relURL }}" alt="{{ $post.Params.title }}" />
-            </a>
-            {{ end }}
             <header class="post-header">
-              <h3 class="post-title"><a href="{{ $post.URL }}" rel="bookmark">{{ $post.Params.title }}</a>
+              <h3 class="post-title"><a href="{{ $post.URL }}" rel="bookmark">
+                {{ $post.Params.thumb_image}} {{ $post.Params.title }}</a>
               </h3>
               <div class="post-meta">
                 <time class="published"

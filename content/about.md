@@ -1,13 +1,13 @@
 ---
-title: Acerca
+title: Oscar Barajas Tavares
 subtitle: Frontend Developer & Foundation Layer at @platzi - Lead at Developer Circles from Facebook, ReactJS, Speaker & Blogger. I teach ReactJS & Svelte in Platzi.
 layout: page
 ---
 
 ### ¿Quién soy? 
-Mexicano, originario de Torreón Coahuila, actualmente viviendo en Colombia, trabajo como Foundation Layer en Platzi , empresa dedicada a la educación online, futuro padre y apasionado de la enseñanza online.
+Mexicano, originario de Torreón Coahuila, actualmente viviendo en Colombia, trabajo como Foundation Layer en Platzi , empresa dedicada a la educación online, padre y apasionado de la enseñanza online.
 
-Soy líder de comunidades, participando fuertemente en la comunidad de Facebook Developer Circles Bogotá. Soy un apasionado por las tecnologías particularmente por React y hoy en día descubriendo y evangelizando sobre Svelte.dev .
+Soy líder de comunidades, participando fuertemente en la comunidad de Facebook Developer Circles Bogotá. Soy un apasionado por las tecnologías particularmente por React y hoy en día descubriendo y evangelizando sobre Svelte.dev.
 
 ### Especialidades
 JavaScript, Svelte, React, Node.
