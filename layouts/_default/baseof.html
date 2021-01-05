@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>    
-
         <title>{{ if .Title }}{{ $.Title }} - {{ end }}{{ .Site.Title }}</title>
         <meta charset="utf-8">
+        <meta content="#333333" name="theme-color">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="google" content="notranslate" />
+        <link href="favicon.png" rel="icon" type="image/png">
         <meta name="description" content="{{ .Params.excerpt | default .Site.Params.description }}"/>
         <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ (resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.css" . | resources.ToCSS (dict "indentWidth" 4 "outputStyle" "nested" "precision" 10)).Permalink }}">
