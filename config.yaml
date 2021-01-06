@@ -17,8 +17,8 @@ params:
       - label: Acerca
         url: /about/
         style: link
-      - label: Contacto
-        url: /contact/
+      - label: Cursos
+        url: /cursos/
         style: link
   footer:
     content: >-

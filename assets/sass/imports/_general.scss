@@ -576,3 +576,39 @@ img {
 #latest-posts {
   margin: 1em 0 0 0;
 }
+
+.Posts {
+  display: grid;
+  grid-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Course-content {
+  display: flex;
+  align-items: center;
+}
+.Posts  figure {
+  margin: 0;
+  padding: 0;
+}
+.Posts img {
+  width: 64px;
+  height: 64px;
+  max-width: 64px;
+  margin: 0 1em 0 0;
+}
+.Posts h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+.Posts span {
+  font-weight: 300;
+  color: #d8195e;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.Posts a {
+  text-decoration: none;
+}
