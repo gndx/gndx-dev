@@ -1,0 +1,30 @@
+{{ define "content" }}
+<div class="inner outer">
+	<article class="post post-full">
+		<header class="post-header inner-sm">
+			<h1 class="post-title line-top">{{ .Params.title }}</h1>
+			{{ if .Params.subtitle }}
+			<div class="post-subtitle">
+				{{ $.Params.subtitle | safeHTML }}
+			</div>
+			{{ end }}
+		</header>
+		{{ if .Params.image }}
+		<div class="post-image">
+			<img src="{{ $.Params.image | relURL }}" alt="{{ $.Params.title }}" />
+		</div>
+		{{ end }}
+		<div class="post-content inner-sm">
+			{{ .Content }}
+		</div>
+		<iframe
+		src="https://open.spotify.com/embed-podcast/episode/0Yozfl4RVHK9wIssP2vc2c"
+		width="100%"
+		height="232"
+		frameborder="0"
+		title="Humans of Platzi - Oscar Barajas"
+		allowtransparency="true"
+		allow="encrypted-media" />
+	</article><!-- .post -->
+</div><!-- .inner -->
+{{ end }}

@@ -1,7 +1,7 @@
 ---
 title: Oscar Barajas Tavares
 subtitle: Frontend Developer & Foundation Layer at @platzi - Lead at Developer Circles from Facebook, ReactJS, Speaker & Blogger. I teach ReactJS & Svelte in Platzi.
-layout: page
+layout: about
 ---
 
 ### ¿Quién soy? 
@@ -17,3 +17,5 @@ Desarrollador FrontEnd con 16 años de experiencia, creando mi primer página we
 
 ### Proyectos recientes
 Me apasiona escribir y crear contenido sobre ReactJS en [arepa.dev](https://arepa.dev) y en este blog donde escribo de JavaScript y las conferencias que imparto.
+
+### Mi Historia
