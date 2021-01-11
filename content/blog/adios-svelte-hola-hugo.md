@@ -4,7 +4,7 @@ subtitle: Por que le dije adios a Svelve, el framework prometedor que permite cr
 excerpt: >-
   Por que le dije adios a Svelve, el framework prometedor que permite crear sorprentes aplicaciones web.
 date: '2021-01-10'
-thumb_image: 🔥
+thumb_image: 😥
 layout: post
 ---
 
@@ -18,6 +18,6 @@ Me gusto lo aprendido, me gusto crear el blog e integrar mis herramientas, apren
 **Hola, Hugo**
 Como uno de mis objetivos personales para este año 2021, es aprender un nuevo lenguaje de programación, el cual me permita seguir creciendo como profesional y lograr mejorar mis habilidades como desarrollador, durante el 2020 me enfoque en aprender, practicar y crear proyectos con Python, me siento cómodo y sé que puedo iniciar un proyecto o líneas de código con este lenguaje de programación.
 
-En la mira estaban dos grandes, Rust o Go, La decisión fue fácil pues en parte necesitaba encontrar una forma de migrar mi blog a una plataforma estable y se unió con la necesidad de aprendizaje, cuando encontré el proyecto gohugo.io el cual es un framework para crear sitios web estáticos, utilizando la arquitectura **JAMStack** y escrito en GO.
+En la mira estaban dos grandes, Rust o Go, La decisión fue fácil pues en parte necesitaba encontrar una forma de migrar mi blog a una plataforma estable y se unió con la necesidad de aprendizaje, cuando encontré el proyecto [gohugo.io](https://gohugo.io) el cual es un framework para crear sitios web estáticos, utilizando la arquitectura **JAMStack** y escrito en GO.
 
 Cuestión de investigar, probar y lanzarme al ruedo con esta tecnología que me permitirá aprender GO (*Jugando más con el Framework*) crear mi blog y continuar cumpliendo con dos de mis principales metas de este año, Aprender un nuevo lenguaje de programación y escribir más.
