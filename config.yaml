@@ -53,6 +53,8 @@ params:
 taxonomies:
   stub: stub
 disableKinds:
-  - RSS
   - taxonomy
   - taxonomyTerm
+outputs:
+  home:
+  - RSS
