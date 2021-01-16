@@ -1,5 +1,5 @@
 title: Oscar Barajas Tavares
-baseURL: /
+baseURL: https://gndx.dev/
 params:
   description: Frontend & Foundation Layer at Platzi
   color_scheme: dark
