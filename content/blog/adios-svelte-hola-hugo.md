@@ -5,6 +5,7 @@ excerpt: >-
   Por que le dije adios a Svelve, el framework prometedor que permite crear sorprentes aplicaciones web.
 date: '2021-01-10'
 thumb_image: 😥
+image: https://arepa.s3.amazonaws.com/adios-svelte-hola-hugo.jpg
 layout: post
 ---
 

@@ -5,6 +5,7 @@ excerpt: >-
   Que necesitas saber para conseguir tu primer empleo como programador.
 date: '2020-06-07'
 thumb_image: 🔥
+image: https://arepa.s3.amazonaws.com/como-conseguir-tu-primer-empleo-como-programador.jpg
 layout: post
 ---
 
