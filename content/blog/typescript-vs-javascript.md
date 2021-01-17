@@ -5,6 +5,7 @@ excerpt: >-
   Te cuento mi experiencia como Frontend Developer aprendiendo TypeScript que ventajas y desventajas
 date: '2020-06-07'
 thumb_image: 💥
+image: https://arepa.s3.amazonaws.com/gndx-youtube-thumbnail.jpg
 layout: post
 ---
 

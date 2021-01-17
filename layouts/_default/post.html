@@ -11,11 +11,6 @@
         </div>
         {{ end }}
       </header>
-      {{ if .Params.image }}
-      <div class="post-image">
-        <img src="{{ $.Params.image | relURL }}" alt="{{ $.Params.title }}" />
-      </div>
-      {{ end }}
       <div class="post-content inner-sm">
         {{ .Content }}
       </div>

@@ -1,9 +1,11 @@
 title: Oscar Barajas Tavares
 baseURL: https://gndx.dev/
+languageCode: es-ES
 params:
-  description: Frontend & Foundation Layer at Platzi
+  description: Frontend Developer & Foundation Layer at @platzi - Lead at Developer Circles from Facebook, ReactJS, Speaker & Blogger. I teach ReactJS in @platzi
   color_scheme: dark
   accent_color: pink
+  image: https://arepa.s3.amazonaws.com/og-gndx.png
   header:
     title: GNDX
     has_nav: true
