@@ -1,8 +1,8 @@
 ---
 title: ¡Como conseguir tu primer empleo como programador!
-subtitle: Basado en mi experiencia y resumido en 10 puntos, te explico lo que necesitas saber para conseguir tu primer empleo como programador.
+subtitle: Que necesitas saber para conseguir tu primer empleo como programador.
 excerpt: >-
-  Basado en mi experiencia y resumido en 10 puntos, te explico lo que necesitas saber para conseguir tu primer empleo como programador.
+  Que necesitas saber para conseguir tu primer empleo como programador.
 date: '2020-06-07'
 thumb_image: 🔥
 layout: post
