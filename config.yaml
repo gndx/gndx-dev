@@ -55,6 +55,3 @@ taxonomies:
 disableKinds:
   - taxonomy
   - taxonomyTerm
-outputs:
-  home:
-  - RSS
