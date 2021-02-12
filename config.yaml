@@ -22,6 +22,9 @@ params:
       - label: Cursos
         url: /cursos/
         style: link
+      - label: Discord
+        url:  https://discord.gg/5mZc7fU5WZ
+        style: link
   footer:
     content: >-
       Oscar Barajas Tavares @gndx | Todos los izquierdos reservados © 2021.
