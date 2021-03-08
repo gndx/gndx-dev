@@ -13,7 +13,8 @@
     {{ end }}
     {{ if $section.grid_items }}
     <div class="block-content">
-      <div class="grid{{ if eq $section.col_number "two" }} grid-col-2{{ end }}{{ if eq $section.col_number "three" }} grid-col-3{{ end }}">
+      <div class="grid{{ if eq $section.col_number " two" }} grid-col-2{{ end }}{{ if eq $section.col_number "three" }}
+        grid-col-3{{ end }}">
         {{ range $item_idx, $item := $section.grid_items }}
         <div class="grid-item">
           {{ if $section.is_numbered }}
@@ -40,8 +41,8 @@
           {{ end }}
         </div>
         {{ end }}
-        </div>
       </div>
+    </div>
     {{ end }}
   </div><!-- .inner -->
 </section><!-- .block -->
