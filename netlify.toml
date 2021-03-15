@@ -4,3 +4,8 @@ command = "hugo"
 
   [build.environment]
   HUGO_VERSION = "0.79.1"
+
+[[redirects]]
+  from = "/webpack"
+  to = "https://platzi.com/cursos/webpack/?utm_source=platzi_teacher&utm_medium=teacher_referral&utm_campaign=542"
+  status = 301
