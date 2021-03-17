@@ -11,4 +11,4 @@ layout: post
 
 Muchas veces me han preguntado, **¿Vale la pena aprender Node.js?** Me preocupa un poco que los desarrolladores que están iniciando en **JavaScript**, no tengan claro lo que es Node.js y lo ven como otra tecnología para aprender y les abruma saber que tienen que aprenderlo. En este video te explico lo que debes de saber para empezar con **Node.js**. 
 
-{{< youtube xmswIw1idgA >}}
+{{< youtube B6MZkrUZtMQ >}}
