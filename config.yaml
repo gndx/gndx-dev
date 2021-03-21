@@ -22,6 +22,9 @@ params:
       - label: Cursos
         url: /cursos/
         style: link
+      - label: Podcast
+        url: https://open.spotify.com/show/0FmtewBzfG64SOilzlnDuK?si=8zxSmXbeRHSlBPE0oUw8Cg
+        style: link
       - label: Discord
         url:  https://discord.gg/5mZc7fU5WZ
         style: link
