@@ -1,0 +1,42 @@
+{{ define "content" }}
+
+<div class="inner outer">
+  <div class="blogpost">
+    <article class="post post-full">
+      <header class="post-header inner-sm">
+        <h1 class="post-title line-top">{{ .Params.title }}</h1>
+        {{ if .Params.subtitle }}
+        <div class="post-subtitle">
+          {{ $.Params.subtitle | safeHTML }}
+        </div>
+        {{ end }}
+      </header>
+      <div class="post-content inner-sm">
+        {{ .Content }}
+      </div>
+    </article>
+    <aside>
+      <footer class="post-meta inner-sm">
+        <time class="published" datetime="{{ .Date | dateFormat " 2006-01-02 15:04" }}">{{ .Date | dateFormat "January 02, 2006" }}</time> - GNDX
+      </footer>
+      <div class="Newsletter">
+        <h4>NEWSLETTER</h4>
+        <p>
+          Recibe las últimas novedades sobre Frontend y Tecnología en tu correo
+          electrónico.
+        </p>
+        <form action="https://tinyletter.com/gndxdev" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/gndxdev', 'popupwindow','scrollbars=yes,width=800,height=600');return true">
+          <p>
+            <label for="tlemail" value="">Correo electrónico:</label>
+            <input type="text" name="email" id="tlemail" placeholder="Tu Correo electrónico" />
+          </p>
+          <input type="hidden" value="1" name="embed" />
+          <button class="btn" type="submit">Subscribirse</button>
+        </form>
+        <p>😊 Sin Spam.</p>
+      </div>
+    </aside>
+  </div>
+
+</div>
+{{ end }}

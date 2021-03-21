@@ -23,7 +23,7 @@ params:
         url: /cursos/
         style: link
       - label: Podcast
-        url: https://open.spotify.com/show/0FmtewBzfG64SOilzlnDuK?si=8zxSmXbeRHSlBPE0oUw8Cg
+        url: /podcast/
         style: link
       - label: Discord
         url:  https://discord.gg/5mZc7fU5WZ
@@ -57,6 +57,11 @@ params:
         url: 'https://twitch.tv/gndxdev'
         style: icon
         icon_class: fa-twitch
+        new_window: true
+      - label: Spotify
+        url: 'https://open.spotify.com/show/0FmtewBzfG64SOilzlnDuK?si=8zxSmXbeRHSlBPE0oUw8Cg'
+        style: icon
+        icon_class: fa-spotify
         new_window: true
 taxonomies:
   stub: stub
