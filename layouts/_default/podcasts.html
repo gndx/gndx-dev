@@ -7,10 +7,18 @@
     {{ if .Params.subtitle }}
     <div class="page-subtitle">
       {{ $.Params.subtitle | safeHTML }}
-      <br><br>
-      <a href="https://open.spotify.com/show/0FmtewBzfG64SOilzlnDuK" target="_blank"><img src="https://arepa.s3.amazonaws.com/spotify-podcast-badge-blk-grn-330x80.png" width="160" alt="Spotify"></a>
+      <div class="page-podcasts">
+        <a href="https://open.spotify.com/show/0FmtewBzfG64SOilzlnDuK" target="_blank">
+          <img src="https://arepa.s3.amazonaws.com/spotify-podcast-badge-blk-grn-330x80.png" width="160" alt="Spotify">
+        </a>
+        <a href="https://podcasts.apple.com/us/podcast/error-418/id1559436207?itsct=podcast_box&amp;itscg=30200"
+          target="_blank">
+          <img
+            src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/standard-white/es-es?size=250x83&amp;releaseDate=1616308440&h=a71a3932e61949aa26779a0ee71765bf"
+            width="160" alt="Apple Podcasts">
+        </a>
+      </div>
     </div>
-
     {{ end }}
   </header><!-- .page-header -->
 

@@ -612,3 +612,17 @@ img {
 .Posts a {
   text-decoration: none;
 }
+
+.page-podcasts {
+  margin: 25px 0 0 0;
+}
+.page-podcasts a {
+  color: #272c30;;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+  outline: none;
+}
+.page-podcasts a:hover {
+  color: #272c30 !important;
+  text-decoration: none;
+}
