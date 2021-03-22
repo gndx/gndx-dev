@@ -63,6 +63,11 @@ params:
         style: icon
         icon_class: fa-spotify
         new_window: true
+      - label: iTunes
+        url: 'https://podcasts.apple.com/us/podcast/error-418/id1559436207?itsct=podcast_box&itscg=30200'
+        style: icon
+        icon_class: fa-itunes
+        new_window: true
 taxonomies:
   stub: stub
 disableKinds:
