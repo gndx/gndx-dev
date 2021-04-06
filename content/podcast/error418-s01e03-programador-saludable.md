@@ -3,7 +3,7 @@ title: Consejos para convertirte en un programador saludable
 subtitle: Muchas veces no le damos la importancia a nuestra salud física y mental, hasta que llega el síndrome de desgaste profesional o mejor conocido como burnout.
 excerpt: >-
   Muchas veces no le damos la importancia a nuestra salud física y mental, hasta que llega el síndrome de desgaste profesional o mejor conocido como burnout.
-date: '2021-04-5'
+date: '2021-04-05'
 thumb_image: 🎙️
 image: https://arepa.s3.amazonaws.com/podcast-burnout.png
 layout: podcast
