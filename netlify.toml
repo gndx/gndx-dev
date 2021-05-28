@@ -9,3 +9,6 @@ command = "hugo"
   from = "/webpack"
   to = "https://platzi.com/cursos/webpack/?utm_source=platzi_teacher&utm_medium=teacher_referral&utm_campaign=542"
   status = 301
+  from = "/platzi"
+  to = "https://platzi.com/comprar/platzi-referido/?utm_source=partnerships&utm_medium=organic&utm_campaign=referidos2021_oscar_barajas"
+  status = 301
