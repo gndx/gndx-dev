@@ -13,3 +13,7 @@ command = "hugo"
   from = "/platzi"
   to = "https://platzi.com/comprar/platzi-referido/?utm_source=partnerships&utm_medium=organic&utm_campaign=referidos2021_oscar_barajas"
   status = 301
+[[redirects]]
+  from = "/platzi-especial"
+  to = "https://platzi.com/comprar/platzi-referido/?utm_source=partnerships&utm_medium=organic&utm_campaign=referidos2021_ana_belisa"
+  status = 301
